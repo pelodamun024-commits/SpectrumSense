@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		643B39812EAC0FAD000A6ED1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 643B39782EAC0FAD000A6ED1 /* Assets.xcassets */; };
+		643B39832EAC0FAD000A6ED1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643B397B2EAC0FAD000A6ED1 /* LaunchScreen.storyboard */; };
+		643B39842EAC0FAD000A6ED1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643B397D2EAC0FAD000A6ED1 /* Main.storyboard */; };
+		643B398E2EAC0FBF000A6ED1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B398A2EAC0FBF000A6ED1 /* AppDelegate.swift */; };
+		643B398F2EAC0FBF000A6ED1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B398B2EAC0FBF000A6ED1 /* SceneDelegate.swift */; };
+		643B39902EAC0FBF000A6ED1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B398C2EAC0FBF000A6ED1 /* ViewController.swift */; };
+		643B39922EAC11A1000A6ED1 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B39912EAC11A1000A6ED1 /* AppColors.swift */; };
+		643B39942EAC1200000A6ED1 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B39932EAC1200000A6ED1 /* CameraService.swift */; };
+		643B39962EAC1226000A6ED1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B39952EAC1226000A6ED1 /* ContentView.swift */; };
+		643B39982EAC138F000A6ED1 /* LiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B39972EAC138F000A6ED1 /* LiveViewModel.swift */; };
+		643B399A2EAC139D000A6ED1 /* LiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B39992EAC139D000A6ED1 /* LiveView.swift */; };
+		643B399C2EAC1523000A6ED1 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B399B2EAC1523000A6ED1 /* Measurement.swift */; };
+		643B399E2EAC1530000A6ED1 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B399D2EAC1530000A6ED1 /* PersistenceService.swift */; };
+		643B39A02EAC1549000A6ED1 /* SaveMeasurementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B399F2EAC1549000A6ED1 /* SaveMeasurementView.swift */; };
+		643B39A22EAC1598000A6ED1 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B39A12EAC1598000A6ED1 /* HistoryViewModel.swift */; };
+		643B39A42EAC15B6000A6ED1 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B39A32EAC15B6000A6ED1 /* HistoryView.swift */; };
+		643B39A62EAC169F000A6ED1 /* SpectrumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B39A52EAC169F000A6ED1 /* SpectrumView.swift */; };
+		643B39A82EAC16AA000A6ED1 /* SpectrumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B39A72EAC16AA000A6ED1 /* SpectrumViewModel.swift */; };
+		643B39AA2EAC16B5000A6ED1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B39A92EAC16B5000A6ED1 /* SettingsView.swift */; };
+		643B39AC2EAC173F000A6ED1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B39AB2EAC173F000A6ED1 /* MainView.swift */; };
+		643B39AE2EAC1A37000A6ED1 /* CameraPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B39AD2EAC1A37000A6ED1 /* CameraPermissionView.swift */; };
+		643B39B02EAC1BD7000A6ED1 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B39AF2EAC1BD7000A6ED1 /* Onboarding.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		643B395F2EAC0FA2000A6ED1 /* LightMeterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightMeterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		643B39782EAC0FAD000A6ED1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		643B39792EAC0FAD000A6ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		643B397A2EAC0FAD000A6ED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		643B397C2EAC0FAD000A6ED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		643B398A2EAC0FBF000A6ED1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		643B398B2EAC0FBF000A6ED1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		643B398C2EAC0FBF000A6ED1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		643B39912EAC11A1000A6ED1 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		643B39932EAC1200000A6ED1 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		643B39952EAC1226000A6ED1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		643B39972EAC138F000A6ED1 /* LiveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewModel.swift; sourceTree = "<group>"; };
+		643B39992EAC139D000A6ED1 /* LiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveView.swift; sourceTree = "<group>"; };
+		643B399B2EAC1523000A6ED1 /* Measurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
+		643B399D2EAC1530000A6ED1 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		643B399F2EAC1549000A6ED1 /* SaveMeasurementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveMeasurementView.swift; sourceTree = "<group>"; };
+		643B39A12EAC1598000A6ED1 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		643B39A32EAC15B6000A6ED1 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		643B39A52EAC169F000A6ED1 /* SpectrumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumView.swift; sourceTree = "<group>"; };
+		643B39A72EAC16AA000A6ED1 /* SpectrumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumViewModel.swift; sourceTree = "<group>"; };
+		643B39A92EAC16B5000A6ED1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		643B39AB2EAC173F000A6ED1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		643B39AD2EAC1A37000A6ED1 /* CameraPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermissionView.swift; sourceTree = "<group>"; };
+		643B39AF2EAC1BD7000A6ED1 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		643B395C2EAC0FA2000A6ED1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		643B39562EAC0FA2000A6ED1 = {
+			isa = PBXGroup;
+			children = (
+				643B39802EAC0FAD000A6ED1 /* LightMeterApp */,
+				643B39602EAC0FA2000A6ED1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		643B39602EAC0FA2000A6ED1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				643B395F2EAC0FA2000A6ED1 /* LightMeterApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		643B39802EAC0FAD000A6ED1 /* LightMeterApp */ = {
+			isa = PBXGroup;
+			children = (
+				643B39892EAC0FBB000A6ED1 /* Sui */,
+				643B398D2EAC0FBF000A6ED1 /* App */,
+				643B39782EAC0FAD000A6ED1 /* Assets.xcassets */,
+				643B39792EAC0FAD000A6ED1 /* Info.plist */,
+				643B397B2EAC0FAD000A6ED1 /* LaunchScreen.storyboard */,
+				643B397D2EAC0FAD000A6ED1 /* Main.storyboard */,
+			);
+			path = LightMeterApp;
+			sourceTree = "<group>";
+		};
+		643B39892EAC0FBB000A6ED1 /* Sui */ = {
+			isa = PBXGroup;
+			children = (
+				643B39912EAC11A1000A6ED1 /* AppColors.swift */,
+				643B39932EAC1200000A6ED1 /* CameraService.swift */,
+				643B39952EAC1226000A6ED1 /* ContentView.swift */,
+				643B39972EAC138F000A6ED1 /* LiveViewModel.swift */,
+				643B39992EAC139D000A6ED1 /* LiveView.swift */,
+				643B399B2EAC1523000A6ED1 /* Measurement.swift */,
+				643B399D2EAC1530000A6ED1 /* PersistenceService.swift */,
+				643B399F2EAC1549000A6ED1 /* SaveMeasurementView.swift */,
+				643B39A12EAC1598000A6ED1 /* HistoryViewModel.swift */,
+				643B39A32EAC15B6000A6ED1 /* HistoryView.swift */,
+				643B39A52EAC169F000A6ED1 /* SpectrumView.swift */,
+				643B39A72EAC16AA000A6ED1 /* SpectrumViewModel.swift */,
+				643B39A92EAC16B5000A6ED1 /* SettingsView.swift */,
+				643B39AB2EAC173F000A6ED1 /* MainView.swift */,
+				643B39AD2EAC1A37000A6ED1 /* CameraPermissionView.swift */,
+				643B39AF2EAC1BD7000A6ED1 /* Onboarding.swift */,
+			);
+			path = Sui;
+			sourceTree = "<group>";
+		};
+		643B398D2EAC0FBF000A6ED1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				643B398A2EAC0FBF000A6ED1 /* AppDelegate.swift */,
+				643B398B2EAC0FBF000A6ED1 /* SceneDelegate.swift */,
+				643B398C2EAC0FBF000A6ED1 /* ViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		643B395E2EAC0FA2000A6ED1 /* LightMeterApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 643B39722EAC0FA3000A6ED1 /* Build configuration list for PBXNativeTarget "LightMeterApp" */;
+			buildPhases = (
+				643B395B2EAC0FA2000A6ED1 /* Sources */,
+				643B395C2EAC0FA2000A6ED1 /* Frameworks */,
+				643B395D2EAC0FA2000A6ED1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LightMeterApp;
+			packageProductDependencies = (
+			);
+			productName = LightMeterApp;
+			productReference = 643B395F2EAC0FA2000A6ED1 /* LightMeterApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		643B39572EAC0FA2000A6ED1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					643B395E2EAC0FA2000A6ED1 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+				};
+			};
+			buildConfigurationList = 643B395A2EAC0FA2000A6ED1 /* Build configuration list for PBXProject "LightMeterApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 643B39562EAC0FA2000A6ED1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 643B39602EAC0FA2000A6ED1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				643B395E2EAC0FA2000A6ED1 /* LightMeterApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		643B395D2EAC0FA2000A6ED1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643B39812EAC0FAD000A6ED1 /* Assets.xcassets in Resources */,
+				643B39832EAC0FAD000A6ED1 /* LaunchScreen.storyboard in Resources */,
+				643B39842EAC0FAD000A6ED1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		643B395B2EAC0FA2000A6ED1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643B39942EAC1200000A6ED1 /* CameraService.swift in Sources */,
+				643B398E2EAC0FBF000A6ED1 /* AppDelegate.swift in Sources */,
+				643B39962EAC1226000A6ED1 /* ContentView.swift in Sources */,
+				643B39A62EAC169F000A6ED1 /* SpectrumView.swift in Sources */,
+				643B39A02EAC1549000A6ED1 /* SaveMeasurementView.swift in Sources */,
+				643B39A42EAC15B6000A6ED1 /* HistoryView.swift in Sources */,
+				643B39B02EAC1BD7000A6ED1 /* Onboarding.swift in Sources */,
+				643B39922EAC11A1000A6ED1 /* AppColors.swift in Sources */,
+				643B399A2EAC139D000A6ED1 /* LiveView.swift in Sources */,
+				643B399E2EAC1530000A6ED1 /* PersistenceService.swift in Sources */,
+				643B39AA2EAC16B5000A6ED1 /* SettingsView.swift in Sources */,
+				643B39AE2EAC1A37000A6ED1 /* CameraPermissionView.swift in Sources */,
+				643B39A22EAC1598000A6ED1 /* HistoryViewModel.swift in Sources */,
+				643B39AC2EAC173F000A6ED1 /* MainView.swift in Sources */,
+				643B399C2EAC1523000A6ED1 /* Measurement.swift in Sources */,
+				643B398F2EAC0FBF000A6ED1 /* SceneDelegate.swift in Sources */,
+				643B39902EAC0FBF000A6ED1 /* ViewController.swift in Sources */,
+				643B39A82EAC16AA000A6ED1 /* SpectrumViewModel.swift in Sources */,
+				643B39982EAC138F000A6ED1 /* LiveViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		643B397B2EAC0FAD000A6ED1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				643B397A2EAC0FAD000A6ED1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		643B397D2EAC0FAD000A6ED1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				643B397C2EAC0FAD000A6ED1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		643B39732EAC0FA3000A6ED1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W2Y3YV88F9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LightMeterApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Spectrum Sense";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to measure light levels in real time.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LightMeterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		643B39742EAC0FA3000A6ED1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W2Y3YV88F9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LightMeterApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Spectrum Sense";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to measure light levels in real time.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LightMeterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		643B39752EAC0FA3000A6ED1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = W2Y3YV88F9;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		643B39762EAC0FA3000A6ED1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = W2Y3YV88F9;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		643B395A2EAC0FA2000A6ED1 /* Build configuration list for PBXProject "LightMeterApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643B39752EAC0FA3000A6ED1 /* Debug */,
+				643B39762EAC0FA3000A6ED1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		643B39722EAC0FA3000A6ED1 /* Build configuration list for PBXNativeTarget "LightMeterApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643B39732EAC0FA3000A6ED1 /* Debug */,
+				643B39742EAC0FA3000A6ED1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 643B39572EAC0FA2000A6ED1 /* Project object */;
+}
