@@ -64,8 +64,12 @@ struct LiveView: View {
         }
 
         .sheet(isPresented: $isShowingSaveSheet) {
-            SaveMeasurementView(luxValue: viewModel.luxValue) { note in
-                viewModel.saveCurrentMeasurement(note: note)
+            if #available(iOS 15.0, *) {
+                SaveMeasurementView(luxValue: viewModel.luxValue) { note in
+                    viewModel.saveCurrentMeasurement(note: note)
+                }
+            } else {
+                // Fallback on earlier versions
             }
         }
     }

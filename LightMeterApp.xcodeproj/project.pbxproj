@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0407F0E82EB8EC39001C21BA /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 0407F0E72EB8EC39001C21BA /* OneSignalFramework */; };
+		0407F0EA2EB8EC69001C21BA /* Phsdgcf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407F0E92EB8EC68001C21BA /* Phsdgcf.swift */; };
+		0407F0EC2EB8EC73001C21BA /* Rtjgsdfjhgds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407F0EB2EB8EC72001C21BA /* Rtjgsdfjhgds.swift */; };
+		0407F0EE2EB8EC7D001C21BA /* Tuhsdjfg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407F0ED2EB8EC7C001C21BA /* Tuhsdjfg.swift */; };
+		0407F0F02EB8EC86001C21BA /* Ghdsfjhg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407F0EF2EB8EC85001C21BA /* Ghdsfjhg.swift */; };
 		643B39812EAC0FAD000A6ED1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 643B39782EAC0FAD000A6ED1 /* Assets.xcassets */; };
 		643B39832EAC0FAD000A6ED1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643B397B2EAC0FAD000A6ED1 /* LaunchScreen.storyboard */; };
 		643B39842EAC0FAD000A6ED1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643B397D2EAC0FAD000A6ED1 /* Main.storyboard */; };
@@ -32,6 +37,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0407F0E92EB8EC68001C21BA /* Phsdgcf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phsdgcf.swift; sourceTree = "<group>"; };
+		0407F0EB2EB8EC72001C21BA /* Rtjgsdfjhgds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rtjgsdfjhgds.swift; sourceTree = "<group>"; };
+		0407F0ED2EB8EC7C001C21BA /* Tuhsdjfg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuhsdjfg.swift; sourceTree = "<group>"; };
+		0407F0EF2EB8EC85001C21BA /* Ghdsfjhg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ghdsfjhg.swift; sourceTree = "<group>"; };
+		0407F0F12EB8ED55001C21BA /* LightMeterApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LightMeterApp.entitlements; sourceTree = "<group>"; };
 		643B395F2EAC0FA2000A6ED1 /* LightMeterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightMeterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		643B39782EAC0FAD000A6ED1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		643B39792EAC0FAD000A6ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0407F0E82EB8EC39001C21BA /* OneSignalFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +99,7 @@
 		643B39802EAC0FAD000A6ED1 /* LightMeterApp */ = {
 			isa = PBXGroup;
 			children = (
+				0407F0F12EB8ED55001C21BA /* LightMeterApp.entitlements */,
 				643B39892EAC0FBB000A6ED1 /* Sui */,
 				643B398D2EAC0FBF000A6ED1 /* App */,
 				643B39782EAC0FAD000A6ED1 /* Assets.xcassets */,
@@ -124,6 +136,10 @@
 		643B398D2EAC0FBF000A6ED1 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				0407F0EF2EB8EC85001C21BA /* Ghdsfjhg.swift */,
+				0407F0ED2EB8EC7C001C21BA /* Tuhsdjfg.swift */,
+				0407F0EB2EB8EC72001C21BA /* Rtjgsdfjhgds.swift */,
+				0407F0E92EB8EC68001C21BA /* Phsdgcf.swift */,
 				643B398A2EAC0FBF000A6ED1 /* AppDelegate.swift */,
 				643B398B2EAC0FBF000A6ED1 /* SceneDelegate.swift */,
 				643B398C2EAC0FBF000A6ED1 /* ViewController.swift */,
@@ -148,6 +164,7 @@
 			);
 			name = LightMeterApp;
 			packageProductDependencies = (
+				0407F0E72EB8EC39001C21BA /* OneSignalFramework */,
 			);
 			productName = LightMeterApp;
 			productReference = 643B395F2EAC0FA2000A6ED1 /* LightMeterApp.app */;
@@ -177,6 +194,9 @@
 			);
 			mainGroup = 643B39562EAC0FA2000A6ED1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0407F0E62EB8EC39001C21BA /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 643B39602EAC0FA2000A6ED1 /* Products */;
 			projectDirPath = "";
@@ -208,6 +228,7 @@
 				643B39942EAC1200000A6ED1 /* CameraService.swift in Sources */,
 				643B398E2EAC0FBF000A6ED1 /* AppDelegate.swift in Sources */,
 				643B39962EAC1226000A6ED1 /* ContentView.swift in Sources */,
+				0407F0F02EB8EC86001C21BA /* Ghdsfjhg.swift in Sources */,
 				643B39A62EAC169F000A6ED1 /* SpectrumView.swift in Sources */,
 				643B39A02EAC1549000A6ED1 /* SaveMeasurementView.swift in Sources */,
 				643B39A42EAC15B6000A6ED1 /* HistoryView.swift in Sources */,
@@ -215,7 +236,9 @@
 				643B39922EAC11A1000A6ED1 /* AppColors.swift in Sources */,
 				643B399A2EAC139D000A6ED1 /* LiveView.swift in Sources */,
 				643B399E2EAC1530000A6ED1 /* PersistenceService.swift in Sources */,
+				0407F0EE2EB8EC7D001C21BA /* Tuhsdjfg.swift in Sources */,
 				643B39AA2EAC16B5000A6ED1 /* SettingsView.swift in Sources */,
+				0407F0EA2EB8EC69001C21BA /* Phsdgcf.swift in Sources */,
 				643B39AE2EAC1A37000A6ED1 /* CameraPermissionView.swift in Sources */,
 				643B39A22EAC1598000A6ED1 /* HistoryViewModel.swift in Sources */,
 				643B39AC2EAC173F000A6ED1 /* MainView.swift in Sources */,
@@ -224,6 +247,7 @@
 				643B39902EAC0FBF000A6ED1 /* ViewController.swift in Sources */,
 				643B39A82EAC16AA000A6ED1 /* SpectrumViewModel.swift in Sources */,
 				643B39982EAC138F000A6ED1 /* LiveViewModel.swift in Sources */,
+				0407F0EC2EB8EC73001C21BA /* Rtjgsdfjhgds.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +278,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LightMeterApp/LightMeterApp.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -267,6 +292,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,6 +316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LightMeterApp/LightMeterApp.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -303,6 +330,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +492,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0407F0E62EB8EC39001C21BA /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.15;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0407F0E72EB8EC39001C21BA /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0407F0E62EB8EC39001C21BA /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 643B39572EAC0FA2000A6ED1 /* Project object */;
 }

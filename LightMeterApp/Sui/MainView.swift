@@ -2,6 +2,7 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct MainView: View {
     
     
@@ -43,10 +44,14 @@ struct MainView: View {
                             }
             
             // Вкладка 3: History
-            HistoryView()
-                .tabItem {
-                    Label("History", systemImage: "clock.arrow.circlepath")
-                }
+            if #available(iOS 16.0, *) {
+                HistoryView()
+                    .tabItem {
+                        Label("History", systemImage: "clock.arrow.circlepath")
+                    }
+            } else {
+                // Fallback on earlier versions
+            }
             
             // Вкладка 4: Settings
             SettingsView()
@@ -79,6 +84,4 @@ struct MainView: View {
       }
 }
 
-#Preview {
-    MainView()
-}
+

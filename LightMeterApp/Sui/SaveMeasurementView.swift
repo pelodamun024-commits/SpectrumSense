@@ -2,6 +2,7 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct SaveMeasurementView: View {
     
     @Environment(\.dismiss) var dismiss
@@ -32,13 +33,17 @@ struct SaveMeasurementView: View {
                     }
                 }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("Save") {
-                        let generator = UINotificationFeedbackGenerator()
-                                generator.notificationOccurred(.success)
-                        onSave(note.isEmpty ? "No note" : note)
-                        dismiss()
+                    if #available(iOS 16.0, *) {
+                        Button("Save") {
+                            let generator = UINotificationFeedbackGenerator()
+                            generator.notificationOccurred(.success)
+                            onSave(note.isEmpty ? "No note" : note)
+                            dismiss()
+                        }
+                        .fontWeight(.bold)
+                    } else {
+                        // Fallback on earlier versions
                     }
-                    .fontWeight(.bold)
                 }
             }
         }

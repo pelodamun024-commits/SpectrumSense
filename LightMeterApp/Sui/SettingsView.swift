@@ -3,6 +3,7 @@
 import SwiftUI
 import StoreKit // <-- 1. Импортируем StoreKit для функции оценки
 
+@available(iOS 15.0, *)
 struct SettingsView: View {
     // Получаем доступ к текущей сцене, чтобы показать окно оценки
     //@Environment(\.windowScene) var windowScene
@@ -23,39 +24,43 @@ struct SettingsView: View {
             ZStack {
                 AppColors.background.ignoresSafeArea()
                 
-                Form {
-                    // --> 4. Новый раздел для вовлечения пользователей
-                    Section(header: Text("Support & Feedback")) {
-                        Button(action: rateTheApp) {
-                            Label("Rate The App", systemImage: "star.fill")
+                if #available(iOS 16.0, *) {
+                    Form {
+                        // --> 4. Новый раздел для вовлечения пользователей
+                        Section(header: Text("Support & Feedback")) {
+                            Button(action: rateTheApp) {
+                                Label("Rate The App", systemImage: "star.fill")
+                            }
+                            
+                            // ShareLink - нативный способ поделиться контентом
+                            ShareLink(item: appURL) {
+                                Label("Share The App", systemImage: "square.and.arrow.up")
+                            }
+                        }
+                        .foregroundColor(AppColors.primaryText) // Делаем текст кнопок основным цветом
+                        
+                        Section(
+                            header: Text("Data Management"),
+                            footer: Text("This action cannot be undone.")
+                        ) {
+                            Button("Clear History", role: .destructive) {
+                                showingClearHistoryAlert = true
+                            }
                         }
                         
-                        // ShareLink - нативный способ поделиться контентом
-                        ShareLink(item: appURL) {
-                            Label("Share The App", systemImage: "square.and.arrow.up")
+                        Section(header: Text("About")) {
+                            HStack {
+                                Text("App Version")
+                                Spacer()
+                                Text(appVersion) // Используем динамическую версию
+                                    .foregroundColor(.secondary)
+                            }
                         }
                     }
-                    .foregroundColor(AppColors.primaryText) // Делаем текст кнопок основным цветом
-                    
-                    Section(
-                        header: Text("Data Management"),
-                        footer: Text("This action cannot be undone.")
-                    ) {
-                        Button("Clear History", role: .destructive) {
-                            showingClearHistoryAlert = true
-                        }
-                    }
-                    
-                    Section(header: Text("About")) {
-                        HStack {
-                            Text("App Version")
-                            Spacer()
-                            Text(appVersion) // Используем динамическую версию
-                                .foregroundColor(.secondary)
-                        }
-                    }
+                    .scrollContentBackground(.hidden)
+                } else {
+                    // Fallback on earlier versions
                 }
-                .scrollContentBackground(.hidden)
             }
             .navigationTitle("Settings")
             .alert("Are you sure?", isPresented: $showingClearHistoryAlert) {
@@ -73,8 +78,4 @@ struct SettingsView: View {
             SKStoreReviewController.requestReview(in: scene)
         }
     }
-}
-
-#Preview {
-    SettingsView()
 }
